@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Biography Homepage</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="header">
+
+    <nav class="navigator">
+      <a class="active" href="index.html">Home</a></li>
+      <a href="aboutme.html">About Me</a></li>
+      <a href="hobbies.html">Hobbies</a></li>
+      <a href="contact.html">Contact Me</a></li>
+    </nav>
+
+  </div>
+
+  <div class="audio-container">
+    <audio id="thestrokes" loop>
+      <source src="audio/08 - Hard To Explain.flac" type="audio/flac">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <center><br><br><h1>Welcome to my Webpage!</h1></center>
+  <div class="wrapper">
+    <div class="intro">
+        <center><img class="picture" src="./images/picture.png">
+        <p class="sub-text">Hello everyone! Welcome to my page!</p>
+        <p class="sub-text">My name is Miguel Carlo Kua, or you can call me Miggy, feel free to explore my simple bio page!
+          <br><br><br>Feel free to also navigate via the selections above! :>
+        </p>
+        <p class="sub-text">P.S.: Click <a href="#" onclick="playMusic(); return false;">Me</a> to listen to my favorite song!<br>
+        Or if you do not like it, click <a href="#" onclick="pauseMusic(); return false;">me</a>.<br>Or if you REALLY do not want to hear it again, click <a href="https://www.youtube.com/watch?v=p7YXXieghto">me</a>.</center>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <nav class="navigator">
+      <a class="active" href="index.html">Home</a></li>
+      <a href="aboutme.html">About Me</a></li>
+      <a href="hobbies.html">Hobbies</a></li>
+      <a href="contact.html">Contact Me</a></li>
+    </nav>
+  </div>
+
+  <script>
+    var audio;
+    function playMusic()
+    {
+      audio = document.getElementById('thestrokes');
+      audio.play();
+    }
+
+    function pauseMusic()
+    {
+      audio.pause();
+    }
+
+  </script>
+</body>
+</html>
